@@ -4,6 +4,7 @@ const recipeSchema = new Schema({
     title: { type: String, trim: true, required: true },
     imgUrl: { type: String, trim: true },
     methods: { type: Array, trim: true },
+    time: { type: String },
     categories: { type: Array },
     instructions: { type: Array },
     ingredients: { type: Array },

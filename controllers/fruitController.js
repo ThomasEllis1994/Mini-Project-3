@@ -6,9 +6,8 @@ async function populateFruits() {
     const { data: fruitData } = await axios.get(
         "https://fruityvice.com/api/fruit/all"
     );
-    console.log(fruitData);
+
     for (const fruit of fruitData) {
-        console.log(fruit.name);
         const filter = { fruitId: fruit.id };
         const newFruit = {
             fruitId: fruit.id,
